@@ -7,7 +7,7 @@ function Box() {
     const API = "https://dummyjson.com/quotes";
     const [quotes, setQuotes] = useState([]);
     const [qut, setQut] = useState("")
-    const [author, Setauthor] = useState('Press the Next button to see the Authors and there Quotes')
+    const [author, Setauthor] = useState('Press the Next button to see the Authors and their Quotes')
     const [image, Setimage] = useState("")
 
 
@@ -84,7 +84,7 @@ function Box() {
 
     return (
         <div className="box">
-            <h5 className="Headings" style={{color:'#443627'}}>Authors and there Quotes</h5>
+            <h5 className="Headings" style={{color:'#443627'}}>Authors and their Quotes</h5>
             <p className="m-4">-{qut}</p>
             <p className="m-4" style={{ marginLeft: "10px", fontWeight: 'bolder' }}>{author}</p>
             <div className="img image-container" style={{ display: 'flex', justifyContent: 'center' }}>
